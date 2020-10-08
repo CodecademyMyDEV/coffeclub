@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 100%;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+
+/*Navbar*/
+
+nav {
+    background-color: #41332a;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 0 0;
+    overflow: hidden;
+    padding-right: 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*END Navbar*/
+
+
+/*Hader*/
+
+header {
+    background: linear-gradient( rgba(111, 78, 55, 0.3), rgba(60, 42, 30, 0.3)), url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 35rem;
+}
+
+.coffeeHeader {
+    color: white;
+    text-align: left center;
+    padding: 15rem 5rem 7rem 5rem;
+}
+
+.coffeeHeader h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.coffeeHeader h2 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+
+/*END Hader*/
+
+
+/*Footer*/
+
+footer {
+    background-color: #4f4741;
+    color: white;
+    font-size: 1.2rem;
+    height: 3rem;
+    margin: 0;
+    padding: 8px 8px;
+}
+
+footer p {
+    margin: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.footerS {
+    margin-top: 1rem;
+}
+
+
+/*END Footer*/
+
+.card {
+    width: auto;
+    margin: 5%;
+    padding: 0;
+    display: inline-flex;
+    box-shadow: 1px 4px 4px rgb(65, 51, 42, 0.5), 1px 4px 4px rgb(-65, -51, 42, 0.5);
+}
+
+.card .card-image {
+    width: 30%;
+    margin: 0;
+}
+
+.card .card-image img {
+    width: 100%;
+}
+
+.card .card-content {
+    width: 60%;
+    margin: 1rem 3rem;
+}
+
+.card .card-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card .card-description {
+    text-align: justify;
+}
+
+
+/*card event list*/
+
+.card-event-list {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card-event {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 4px 4px rgb(65, 51, 42, 0.5), 1px 4px 4px rgb(-65, -51, 42, 0.5);
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 2rem 1rem;
+    background-color: #41332a;
+    color: white;
+}
+
+.card-event .card-event-img {
+    width: inherit;
+    height: inherit;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+.card-event .card-event-img img {
+    width: inherit;
+    height: inherit;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.card-event .card-event-content {
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -25rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.card-event-content h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card-event-content p {
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.card-event:hover {
+    transform: scale(0.98, 0.98);
+    box-shadow: 1px -4px 4px rgb(65, 51, 42, 0.5), 1px 4px 4px rgb(-65, -51, 42, 0.5);
+}
+
+
+/*END card event list*/
+
+.col {
+    float: left;
+    width: 50%;
+}
+
+.col-event {
+    float: left;
+    width: 30%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#events h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/*contact*/
+
+.contact {
+    margin: 5%;
+    display: inline-flex;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact-info {
+    width: 70%;
+    margin: auto;
+}
+
+.contact-info .contact-item {
+    display: flex;
+}
+
+.contact-info img {
+    width: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+}
+
+.contact-list {
+    width: 30%;
+    display: flex;
+}
+
+.contact-list img {
+    display: inline-flex;
+    width: 5rem;
+    margin: 2rem 2rem;
+}
+
+.contact-list img:hover {
+    transform: scale(1.2);
+}
+
+
+/*END contact*/
+
+@media only screen and (max-width: 480px) {
+    /*Hader*/
+    nav li {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    header {
+        height: 15rem;
+        color: white;
+    }
+    .coffeeHeader {
+        padding-top: 5rem;
+    }
+    .coffeeHeader h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .coffeeHeader h2 {
+        font-size: 1rem;
+    }
+    /*END Hader*/
+    /*Footer*/
+    footer {
+        visibility: hidden;
+    }
+    /*END Footer*/
+    .card .card-image {
+        display: none;
+    }
+    .card .card-image img {
+        display: none;
+    }
+    .card .card-content {
+        width: 100%;
+    }
+    .card .card-title {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .card .card-description {
+        text-align: justify;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0%;
+    }
+    /*card event list*/
+    .card-event {
+        width: 18rem;
+        height: 20rem;
+        margin: 1rem auto;
+    }
+    .card-event .card-event-content {
+        border-radius: 0 0 1rem 1rem;
+        margin-top: -20rem;
+    }
+    .card-event-content h3 {
+        font-size: 1.3rem;
+    }
+    .card-event-content p {
+        font-size: 1.1rem;
+    }
+    /*END card event list*/
+    /*contact*/
+    .contact {
+        margin: 5%;
+        display: block;
+    }
+    .contact-list img {
+        display: inline-flex;
+        width: 3rem;
+        margin: 2rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    /*Hader*/
+    nav li {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    header {
+        height: 15rem;
+        color: white;
+    }
+    .coffeeHeader {
+        padding-top: 5rem;
+    }
+    .coffeeHeader h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .coffeeHeader h2 {
+        font-size: 1rem;
+    }
+    /*END Hader*/
+    /*Footer*/
+    footer {
+        visibility: hidden;
+    }
+    /*END Footer*/
+    .card .card-image {
+        display: none;
+    }
+    .card .card-image img {
+        display: none;
+    }
+    .card .card-content {
+        width: 100%;
+    }
+    .card .card-title {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .card .card-description {
+        text-align: justify;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0%;
+    }
+    /*card event list*/
+    .card-event {
+        width: 18rem;
+        height: 20rem;
+        margin: 1rem auto;
+    }
+    .card-event .card-event-content {
+        border-radius: 0 0 1rem 1rem;
+        margin-top: -20rem;
+    }
+    .card-event-content h3 {
+        font-size: 1.3rem;
+    }
+    .card-event-content p {
+        font-size: 1.1rem;
+    }
+    /*END card event list*/
+    /*contact*/
+    .contact {
+        margin: auto;
+        display: block;
+    }
+    .contact-list img {
+        display: inline-flex;
+        width: 4rem;
+        margin: auto;
+    }
+    .contact-list {
+        width: 100%;
+        display: flex;
+        margin: 2rem auto;
+    }
+}
